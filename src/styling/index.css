@@ -1,0 +1,223 @@
+/* General styling */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    user-select: none;
+    list-style-type: none;
+
+}
+.navbar{
+    padding: 0px 45px;
+}
+
+@media only screen and (max-width: 576px) {
+    .navbar{
+        padding: 0px 5px;
+    }
+    #search{
+        display: none !important;
+    }
+    .landingPage .card{
+        height: 500px;
+        width: 100% !important;
+    }
+    .landingPage{
+        height: 1000px !important;
+        width: 100%;
+        background-color: #ffffff !important;
+        padding: 3% 0px;
+        margin-bottom: 10%;
+    }
+}
+
+.navbar-brand{
+    font-size: larger;
+    font-weight: 700;
+    border: 3px solid black ;
+    padding: 3px;
+}
+.nav-link img{
+    height: 30px;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+}
+.nav-item{
+    margin: 0px 20px;
+    font-weight: 400;
+}
+
+/* ========================== LANDING PAGE ================================ */
+.landingPage{
+    height: 600px;
+    width: 100%;
+    background-color: black;
+    padding: 3% 0px;
+    margin-bottom: 10%;
+}
+
+.landingPage .card{
+    background-color: aliceblue;
+    height: 500px;
+    width: 80%;
+    margin: 0px auto;
+}
+.carousel{
+    height: 500px;
+    background-color: antiquewhite;
+    width: 100%;
+}
+.carousel-inner img{
+    background-size: contain;
+    height: 500px;
+}
+.landingPage .card-text{
+    font-size: larger;
+    font-weight: 500;
+    margin-bottom: 5%;
+}
+.card-body{
+    padding: 10% 5% ;
+}
+
+.modal{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.modal-content{
+    height: 90vh;
+    background-color: aqua;
+}
+
+/* ========================== CLIENT PAGE ================================ */
+.clientPage{
+    width: 80%;
+    display: flex !important;
+    justify-content: space-between;
+    overflow-x: scroll;
+   
+
+}
+.clientPage .card{
+    width: 100%;
+}
+
+/* ========================== INFO PAGE ================================ */
+
+.infoPage{
+    padding: 0px 15px;
+    margin-bottom: 5%;
+}
+.infoPage .card img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 2%;
+}
+.infoPage .card{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 5%;
+}
+
+/* ========================== FOOTER PAGE ================================ */
+  /* STYLES SPECIFIC TO FOOTER  */
+  .footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: #070617;
+  }
+  .footer .col {
+    width: 190px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+  }
+  .footer .col h1 {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 20px 0px 5px 0px;
+    color: rgba(255,255,255,0.2);
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.250em;
+  }
+  .footer .col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer .col ul li {
+    color: #999999;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+  }
+  .social ul li {
+    display: inline-block;
+    padding-right: 5px !important;
+  }
+  
+  .footer .col ul li:hover {
+    color: #ffffff;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+  }
+  .clearfix {
+    clear: both;
+  }
+  @media only screen and (min-width: 1280px) {
+    .contain {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width: 1139px) {
+    .contain .social {
+      width: 1000px;
+      display: block;
+    }
+    .social h1 {
+      margin: 0px;
+    }
+  }
+  @media only screen and (max-width: 950px) {
+    .footer .col {
+      width: 33%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+      .footer .col {
+        width: 50%;
+      }
+      .footer .col h1 {
+        font-size: 14px;
+      }
+      .footer .col ul li {
+        font-size: 13px;
+      }
+  }
+  @media only screen and (max-width: 340px) {
+    .footer .col {
+      width: 100%;
+    }
+  }
